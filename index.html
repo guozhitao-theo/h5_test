@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/animate.min.css"/>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<div class="wraper">
+    <!-- 页面加载   -->
+    <div class="loading-box">
+        <div class="loading">
+            <canvas canvas-id="loadingCanvas" id="loadingCanvas" class="loadingCanvas" ></canvas>
+            <div class="tip">
+                你即将进入尧天禁地
+            </div>
+        </div>
+    </div>
+    <!-- 外层容器-->
+    <div class="container">
+        <!--        每一层，每一页 的样式-->
+        <div class="page" id="page0">
+            <div class="begin_box">
+                <div class="begin">
+                    <div class="begin_text">
+                        开始答题
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page relative" id="page1">
+<!--            先出现明世隐的卡片，随后问题再浮现 明世隐设为背景图 整个隐藏， 当index 为1的时候浮现-->
+            <div class="page1_content animate__animated animate__fadeIn ">
+                <div class="question"></div>
+                <div class="answer"></div>
+            </div>
+        </div>
+        <div class="page relative" id="page2">page3</div>
+        <div class="page" id="page3">page4</div>
+        <div class="page" id="page4">page5</div>
+        <div class="page" id="page5">page6</div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="./js/fn.js"></script>
+<script type="text/javascript" src="./js/changePage.js"></script>
+<script type="text/javascript" src="./js/canvas.js"></script>
+</html>

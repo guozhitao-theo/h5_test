@@ -1,0 +1,117 @@
+html, body, div {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.wraper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+/* 页面加载*/
+.loading-box {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-color: #fefefe;
+    font-size: .16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loading-box .loading {
+    width: 2.6rem;
+    height: 5.6rem;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.loading .loadingCanvas {
+    margin: 0 auto;
+}
+.loading .tip {
+    font-size: .28rem;
+    color: #949494;
+    text-align: center;
+    margin-top: 0;
+
+}
+.container {
+    height: 100%;
+    width: 600%;
+    display: -webkit-box;
+    background-color: red;
+    transition: all 0s linear;
+}
+.page {
+    width: 0;
+    height: 100%;
+    -webkit-box-flex: 1;
+}
+/* 开始答题的 页面*/
+#page0 {
+    background: #2f2428;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+#page0 .begin_box {
+    width: 3.4rem;
+    height: 3.4rem;
+    margin-top: -1rem;
+    background-color: #b6834c;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.begin_box .begin {
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #4d3a33;
+}
+.begin_box .begin .begin_text{
+    text-align: center;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    background-color: #44312d;
+    font-size: 80px;
+    color: #b6834c;
+}
+#page1 {
+}
+#page1 .page1_content {
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-image: url("../image/mingshiyin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#page2 {
+    background: #00f;
+}
+#page3 {
+    background: #0f0;
+}
+#page4 {
+    background: #00f;
+}
+#page5 {
+    background: #f00;
+}
