@@ -102,6 +102,36 @@ html, body {
     background-image: url("../image/mingshiyin.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: center;
+    padding-top: 1.66rem;
+}
+.page1_content .question {
+    margin: 0 auto;
+    width: 6.72rem;
+    font-size: 40px;
+    border: 2px solid #b6834c;
+    border-radius: 80px 80px;
+    text-align: left;
+    padding: .25rem .5rem;
+/*        相对定位*/
+    position: relative;
+    color: #fff;
+}
+.page1_content .question .triangle {
+    border: .3rem solid;
+    border-color: #b6834c transparent transparent transparent;
+    position: absolute;
+    bottom: -.6rem;
+    right: .8rem;
+}
+.page1_content .question .triangle::after {
+    content: '';
+    display: block;
+    border: .28rem solid;
+    border-color: transparent transparent transparent transparent;
+    position: absolute;
+    left: -.28rem;
+    top: -.3rem;
 }
 #page2 {
     background: #00f;

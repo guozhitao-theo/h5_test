@@ -35,10 +35,10 @@ function boxTouchStart(e) {
 // 触摸事件 结束
 function boxTouchEnd(e) {
     document.querySelector(`.page${index + 1}_content`).style.display = "block"
-    if(document.querySelector(`.page${index }_content`)) {
-        // document.querySelector(`.page${index}_content`).classList.add('animate__zoomOutRight')
-        document.querySelector(`.page${index}_content`).style.display = "none"
-    }
+    // if(document.querySelector(`.page${index }_content`)) {
+    //     // document.querySelector(`.page${index}_content`).classList.add('animate__zoomOutRight')
+    //     document.querySelector(`.page${index}_content`).style.display = "none"
+    // }
 }
 // 触摸移动
 function boxTouchMove(e) {
@@ -55,8 +55,7 @@ function boxTouchMove(e) {
         }
         //
         userAnswer[index] = 2
-        document.querySelector(`.page${index}_content`).classList.add('animate__zoomOutRight')
-        document.querySelector(`.page${index}_content`).style.display = "none"
+        // document.querySelector(`.page${index}_content`).style.display = "none"
         container.style.webkitTransform = 'translateX(-'+(itemWidth+endX)+'px)'
         // container.style.webkitTransform = 'translateX(-'+(itemWidth*index)+'px)'
     }
